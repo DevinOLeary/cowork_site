@@ -1,0 +1,187 @@
+
+body {
+  color: $text-white;
+  font-family: $copy;
+  h1{
+    font-family: $titles;
+  }
+  h2{
+    font-size:24px;
+  }
+  p{
+    font-size: 16px;
+  }
+}
+
+
+
+*:focus {
+  outline: none;
+}
+
+a:hover{
+  color: $cowork-blue;
+}
+
+.inverse {
+  color: $text-white;
+}
+.inverse:hover {
+  color: $text-white;
+}
+.site-nav {
+  background-color:$clear;
+  li {
+    color: $text-white;
+  }
+  .contact {
+    color: $text-grey;
+    background-color:$background-yellow;
+  }
+}
+
+.hidden-nav {
+  background-color: $background-grey;
+  h4, h1 {
+    color: $text-white;
+  }
+}
+
+//Mobile menu styling
+.mobile-menu {
+  background-color: $background-white;
+  li a{
+    color: $text-grey;
+    font-size:36px;
+  }
+}
+.menu-icon, .scroll-menu-icon{
+  color:$text-white;
+}
+.menu-icon:hover{
+  cursor: pointer;
+}
+.scroll-menu-icon:hover{
+  cursor:pointer;
+}
+.exit span {
+  color:$text-grey;
+  display:inline-block;
+  font-size:32px;
+}
+.exit:hover{
+  cursor:pointer;
+}
+
+.inverse-section{
+  background: $background-grey;
+  color:$text-white;
+}
+
+.banner {
+  height:80vh;
+  .logo{
+    color: $text-white;
+    h4{
+      font-family: $titles;
+    }
+  }
+  .title-statement{
+    h1{
+      color:$text-white;
+      font-size:2em;
+      span{
+        color:$text-grey;
+        background-color: $background-white-transparent;
+      }
+    }
+  }
+  li {
+      color:$text-white;
+    a {
+      color:$text-white;
+    }
+  }
+}
+.statement{
+  h2{
+    color:inherit;
+  }
+  a{
+    hr{
+      background: $cowork-blue;
+      border:none;
+    }
+  }
+
+}
+
+
+.space-container {
+ a{
+   figure{
+     background: $background-white;
+       #quiet{
+         background: url("media/workspace.png") no-repeat center center;
+         background-size:contain;
+       }
+
+       #social{
+         background: url("media/community.png") no-repeat center center;
+         background-size: contain;
+       }
+   }
+ }
+}
+
+.space-views {
+  background-color: $background-blue;
+
+  h4{
+    background-color: $background-yellow;
+    color: $text-grey;
+  }
+  .headline{
+    h5{
+      hr{
+        background: $background-white;
+        border:none;
+      }
+    }
+  }
+}
+
+.map-container {
+  .directions{
+    background:$background-grey-dark-transparent;
+    color: $text-white;
+    border: none;
+  }
+  a{
+    color:inherit;
+  }
+}
+.info-container{
+  .rating-img{
+    background: url('media/rating.png');
+    width:100%;
+    height:40px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right:0;
+  }
+}
+
+.rates {
+  li {
+    font-size: 1.4em;
+
+    h2{
+      font-weight:lighter;
+    }
+  }
+}
+
+.footer-block{
+  background: $background-grey-dark;
+}

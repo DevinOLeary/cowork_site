@@ -1,0 +1,29 @@
+<video width="320" height="240" autoplay>
+  <source src="<?php bloginfo('template_directory');?>/media/cover.mp4" type="video/mp4">
+  <source src="<?php bloginfo('template_directory');?>/media/cover.ogv" type="video/ogg">
+</video>
+<hr />
+<article class="rates flex-center">
+  <h1 class="center headline">Become a Member</h1>
+    <ul>
+      <li><h3>Designated Desk - $235/MO</h3></li>
+      <li>The Cadillac of all Cowork memberships, our designated desk plan includes a permanent desk and chair (with the freedom to do with them as you please) and 24/7 key access. "Designated deskers" can reserve rooms through our Cobot office management software, and score an invitation to all member-only events.</li>
+    </ul>
+    <ul>
+      <li><h3>Full Time - $150/MO</h3></li>
+      <li>Full Time members get 8:00am to 5:00pm access Monday through Friday, can reserve rooms through our Cobot office management software, and score an invitation to all member-only events.</li>
+    </ul>
+    <ul>
+      <li><h3>Part Time - $80/MO</h3></li>
+      <li>Already set up at home? Consider joining part time! Part time members get access to the space two days per week (8:00am to 5:00pm), can reserve rooms through our Cobot office management software, and score an invitation to all member-only events.</li>
+    </ul>
+    <ul>
+      <li><h3>Supporter - $16/MO</h3></li>
+      <li>Get involved without breaking the bank! "Supporters" get access to the space two days per month (8:00am to 5:00pm), can reserve rooms through our Cobot office management software, and score an invitation to all member-only events.</li>
+    </ul>
+    <ul>
+      <li><h3>Day Pass - $12</h3></li>
+      <li>Only in town for the day? Not a problem! Day passes come with 8:00am to 5:00pm space access, a free cup of coffee, and plenty of local restaurant recommendations. Welcome to Bloomington!</li>
+    </ul>
+    <button class="btn btn-register center">sign up!</button>
+</article>
