@@ -1,0 +1,22 @@
+
+@media screen and (min-width: 760px){
+
+  .banner {
+    font-size: 150%;
+    h1{
+      font-size: 3em;
+    }
+    .title-statement{
+      width:70%;
+      h1{
+        line-height: 90px;
+        span{
+            padding:10px;
+            padding-top:20px;
+            top:50px;
+        }
+      }
+    }
+  }
+
+}

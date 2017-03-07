@@ -402,27 +402,18 @@ a:hover {
   color: #3c3c3c; }
 
 @media screen and (min-width: 760px) {
-  h2 {
-    font-size: 36px; }
-
-  .statement p {
-    font-size: 54px; }
-
   .banner {
     font-size: 150%; }
+    .banner h1 {
+      font-size: 3em; }
     .banner .title-statement {
       width: 70%; }
       .banner .title-statement h1 {
-        line-height: 95px;
-        font-size: 57px; }
+        line-height: 90px; }
         .banner .title-statement h1 span {
           padding: 10px;
           padding-top: 20px;
-          padding-right: 40px;
-          top: 55px; }
-
-  .map-container .directions {
-    right: 50px; } }
+          top: 50px; } }
 ul, li, h1, h2, h3, h4, h5, h6 {
   list-style-type: none;
   padding: 0;
