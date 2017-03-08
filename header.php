@@ -18,6 +18,10 @@
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
+    <!-- Typekit -->
+    <script src="https://use.typekit.net/nlk5nrc.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
+
     <?php wp_head(); ?>
   </head>
 
@@ -26,24 +30,12 @@
       <nav class="hidden-nav" id="hiddenMenu">
         <a href="<?php bloginfo('wpurl');?>"><h1><?php echo get_bloginfo('name');?></h1></a>
         <div class='scroll-menu-icon' id='scrollHamburger'><h3>Menu</h3></div>
-        <ul class="nav-menu flex-row" id="scrollDesktopMenu">
-          <li><a href="#contact"><h4>About</h4></a></li>
-          <li><a href=""><h4>Community</h4></a></li>
-          <li><a href=""><h4>Partners</h4></a></li>
-          <li><a href=""><h4>Pricing</h4></a></li>
-          <li class="contact"><a href=""><h4>Contact</h4></a></li>
-        </ul>
+          <?php wp_nav_menu( array('theme_location' => 'lower', 'menu_class' => 'nav-menu flex-row', 'menu_id' => 'scrollDesktopMenu')); ?>
       </nav>
       <div class='menu-icon' id='hamburger'><h3>Menu</h3></div>
       <div class="mobile-menu hide" id="mobileMenu">
         <h1>Cowork</h1>
         <aside class="exit" id="exit"><span>X<span></aside>
-        <ul>
-          <li><a href="#"><h2>About</h2></a></li>
-          <li><a href="#"><h2>Community</h2></a></li>
-          <li><a href="#"><h2>Partners</h2></a></li>
-          <li><a href="#"><h2>Pricing</h2></a></li>
-          <li class="contact"><a href="#"><h2>Contact</h2></a></li>
-        </ul>
+        <?php wp_nav_menu(array('theme_location' => 'mobile')); ?>
       </div>
     </header>

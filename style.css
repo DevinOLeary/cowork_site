@@ -46,7 +46,7 @@ article, section {
     width: calc(100% + 2px); }
 
 .statement {
-  height: 300px; }
+  height: 400px; }
   .statement p {
     width: 50%;
     min-width: 300px;
@@ -81,6 +81,13 @@ article, section {
 
 .banner {
   position: relative; }
+  .banner .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    height: 90%; }
   .banner #video-container {
     position: absolute;
     left: 0;
@@ -119,7 +126,8 @@ article, section {
     top: 200px;
     left: 10%;
     text-align: left;
-    width: 350px; }
+    width: 350px;
+    z-index: 100; }
     .banner .title-statement h1 {
       position: relative;
       line-height: 55px; }
@@ -245,10 +253,10 @@ figure:hover {
   height: 116px; }
 
 body {
-  color: white;
-  font-family: "Source Sans Pro", serif; }
+  color: #3c3c3c;
+  font-family: "brandon-grotesque", sans-serif; }
   body h1 {
-    font-family: "Quicksand", sans-serif; }
+    font-family: "brandon-grotesque", sans-serif; }
   body h2 {
     font-size: 24px; }
   body p {
@@ -268,19 +276,27 @@ a:hover {
 
 .site-nav {
   background-color: transparent; }
-  .site-nav li {
+  .site-nav ul li {
     color: white; }
-  .site-nav .contact {
-    color: #3c3c3c;
+  .site-nav ul li:last-child {
     background-color: #F7E61C; }
+    .site-nav ul li:last-child a {
+      color: #3c3c3c; }
 
 .hidden-nav {
   background-color: #3c3c3c; }
   .hidden-nav h4, .hidden-nav h1 {
     color: white; }
 
+.nav-menu a {
+  color: white;
+  font-size: 1.3em;
+  padding: 15px; }
+
 .mobile-menu {
   background-color: white; }
+  .mobile-menu h1 {
+    font-size: 57px; }
   .mobile-menu li a {
     color: #3c3c3c;
     font-size: 36px; }
@@ -308,10 +324,12 @@ a:hover {
 
 .banner {
   height: 80vh; }
+  .banner .overlay {
+    background: linear-gradient(to bottom, rgba(66, 66, 66, 0.7), transparent); }
   .banner .logo {
     color: white; }
     .banner .logo h4 {
-      font-family: "Quicksand", sans-serif; }
+      font-family: "brandon-grotesque", sans-serif; }
   .banner .title-statement h1 {
     color: white;
     font-size: 2em; }
@@ -340,6 +358,8 @@ a:hover {
 
 .space-views {
   background-color: #447B8A; }
+  .space-views a:visited h5 {
+    color: white; }
   .space-views h4 {
     background-color: #F7E61C;
     color: #3c3c3c; }
@@ -361,11 +381,6 @@ a:hover {
   background-size: contain;
   background-repeat: no-repeat;
   margin-right: 0; }
-
-.rates li {
-  font-size: 1.4em; }
-  .rates li h2 {
-    font-weight: lighter; }
 
 .footer-block {
   background: #323232; }
@@ -405,15 +420,22 @@ a:hover {
   .banner {
     font-size: 150%; }
     .banner h1 {
-      font-size: 3em; }
+      font-size: 2em; }
     .banner .title-statement {
       width: 70%; }
       .banner .title-statement h1 {
-        line-height: 90px; }
+        line-height: 100px;
+        font-size: 57px; }
         .banner .title-statement h1 span {
           padding: 10px;
           padding-top: 20px;
-          top: 50px; } }
+          top: 60px; }
+
+  .statement p {
+    font-size: 1.5em; }
+
+  .testimony h5 {
+    font-size: 120%; } }
 ul, li, h1, h2, h3, h4, h5, h6 {
   list-style-type: none;
   padding: 0;

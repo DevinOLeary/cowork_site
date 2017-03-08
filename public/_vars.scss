@@ -24,7 +24,7 @@ $text-white: $white;
 $text-black: $black;
 $text-grey: $grey;
 $box-shadow: $grey;
-$overlay-grey:linear-gradient(to bottom right, $grey-transparent, $clear);;
+$overlay-grey:linear-gradient(to bottom, $grey-transparent, $clear);;
 $overlay-white: linear-gradient(to bottom right, $white-transparent, $clear);
 $button-blue: $cowork-blue;
 $button-blue-hover: $dark-blue;
@@ -32,5 +32,5 @@ $button-blue-hover: $dark-blue;
 
 // Fonts
 
-$titles:'Quicksand', sans-serif;
-$copy: 'Source Sans Pro', serif;
+$titles: 'brandon-grotesque', sans-serif;
+$copy: 'brandon-grotesque', sans-serif;

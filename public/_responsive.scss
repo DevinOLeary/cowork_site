@@ -4,18 +4,29 @@
   .banner {
     font-size: 150%;
     h1{
-      font-size: 3em;
+      font-size: 2em;
     }
     .title-statement{
       width:70%;
       h1{
-        line-height: 90px;
+        line-height: 100px;
+        font-size: 57px;
         span{
             padding:10px;
             padding-top:20px;
-            top:50px;
+            top:60px;
         }
       }
+    }
+  }
+  .statement {
+    p{
+      font-size:1.5em;
+    }
+  }
+  .testimony{
+    h5{
+      font-size:120%;
     }
   }
 
