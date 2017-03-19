@@ -1,4 +1,4 @@
-var p = $("#title");
+var p = $(".reveal-menu");
 var menu = $("#hiddenMenu");
 
 
@@ -52,32 +52,36 @@ $(function() {
 });
 
 //Map api
-function initMap() {
-      // Create a map object and specify the DOM element for display.
-      var cowork = {lat: 39.1649964, lng: -86.5382334}
-      var map = new google.maps.Map(document.getElementById('map'), {
-        scrollwheel: false,
-        zoom: 18,
-        center: cowork
-      });
-      var marker = new google.maps.Marker({
-        position: cowork,
-        map: map,
-        title: "Cowork"
-      });
-      var contentString =
-      '<div class="info-container center">' + '<a href="https://www.google.com/search?q=cowork+bloomington&oq=cowork+&aqs=chrome.0.69i59j69i60j69i61l3j0.2425j0j7&sourceid=chrome&ie=UTF-8#lrd=0x886c66ddaa8cd77d:0x62d180cce00eb339,1" target="_blank">' +
-      '<h3>Cowork</h3>' + '<br/>' + '<h5>213 S Rogers St, Bloomington, IN 47404</h5>' + '<div class="rating-img center"></div>' +
-      '<hr/>' + '<h5>(812) 250-9714</h5>' + '</a>' + '</div>';
-      var infowindow = new google.maps.InfoWindow({
-        content: contentString
-       });
-      function openInfoWindow () {
-        infowindow.open(map, marker);
-      }
-       $(window).on('load', openInfoWindow());
-       $(window).resize(openInfoWindow);
-    }
-    $(function() {
-      $(window).resize(initMap);
-    });
+$(function() {
+  if (document.getElementById('map')) {
+    $(function initMap() {
+          // Create a map object and specify the DOM element for display.
+          var cowork = {lat: 39.1649964, lng: -86.5382334}
+          var map = new google.maps.Map(document.getElementById('map'), {
+            scrollwheel: false,
+            zoom: 18,
+            center: cowork
+          });
+          var marker = new google.maps.Marker({
+            position: cowork,
+            map: map,
+            title: "Cowork"
+          });
+          var contentString =
+          '<div class="info-container center">' + '<a href="https://www.google.com/search?q=cowork+bloomington&oq=cowork+&aqs=chrome.0.69i59j69i60j69i61l3j0.2425j0j7&sourceid=chrome&ie=UTF-8#lrd=0x886c66ddaa8cd77d:0x62d180cce00eb339,1" target="_blank">' +
+          '<h3>Cowork</h3>' + '<br/>' + '<h5>213 S Rogers St, Bloomington, IN 47404</h5>' + '<div class="rating-img center"></div>' +
+          '<hr/>' + '<h5>(812) 250-9714</h5>' + '</a>' + '</div>';
+          var infowindow = new google.maps.InfoWindow({
+            content: contentString
+           });
+          function openInfoWindow () {
+            infowindow.open(map, marker);
+          }
+           $(window).on('load', openInfoWindow());
+           $(window).resize(openInfoWindow);
+        });
+        $(function() {
+          $(window).resize(initMap);
+        });
+  }
+});

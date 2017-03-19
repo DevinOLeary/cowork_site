@@ -1,7 +1,9 @@
+
 body {
   width: 100%;
   height:100%;
   overflow-x: hidden;
+  margin: 0;
 }
 hr {
   width: 70%;
@@ -49,27 +51,7 @@ article, section {
   }
 }
 
-.statement {
-  height:400px;
-  p {
-    width:50%;
-    min-width:300px;
-    margin:20px;
-  }
-  div{
-    a{
-      margin-top:20px;
-      width:120px;
-      line-height: 100px;
-      hr{
-        width:120px;
-        height:1px;
-        margin:0px;
-      }
-    }
-  }
-}
-
+// Navigation
 .hidden-nav {
   position: fixed;
   top:0;
@@ -94,8 +76,15 @@ article, section {
   }
 }
 
+//Above the fold
 .banner {
   position: relative;
+  .logo{
+    position: absolute;
+    left:20px;
+    top: 30px;
+    z-index:100;
+  }
   .overlay{
     position: absolute;
     top:0;
@@ -111,38 +100,32 @@ article, section {
     height:100%;
     width:100%;
     overflow: hidden;
-    .logo{
-      position: absolute;
-      left:20px;
-      top: 30px;
-      z-index:100;
-    }
+
     video {
       position: absolute;
       width: 100%;
       min-width:1000px;
       z-index:0;
     }
-
-    ul {
-      display:flex;
-      justify-content: space-between;
-      margin:5px 25px;
-      li {
-        padding:8px 18px;
-        margin:10px;
-        z-index: 100;
-      }
-    }
-    .site-nav {
-      position: absolute;
-      top:15px;
-      right:15px;
-      height: 50px;
+  }
+  ul {
+    display:flex;
+    justify-content: space-between;
+    margin:5px 25px;
+    li {
+      padding:8px 15px;
+      margin:10px;
       z-index: 100;
-      button{
-        z-index: 100;
-      }
+    }
+  }
+  .site-nav {
+    position: absolute;
+    top:15px;
+    right:15px;
+    height: 50px;
+    z-index: 100;
+    button{
+      z-index: 100;
     }
   }
   .title-statement {
@@ -166,6 +149,21 @@ article, section {
     }
   }
 }
+.above-fold-container{
+  width:100%;
+  height: 550px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  .community-page-title-statement {
+    h1{
+      width:100px;
+    }
+    width: 600px;
+
+  }
+}
+
 //Responsive Menus
 .menu-icon{
   position: absolute;
@@ -184,7 +182,7 @@ article, section {
   z-index:250;
   top: 0;
   left: 0;
-  height:100vh;
+  height:100%;
   width:100vw;
   display:flex;
   flex-direction:column;
@@ -224,6 +222,28 @@ article, section {
     width:380px;
   }
 }
+
+
+.statement {
+  height:400px;
+  p {
+    width:50%;
+    min-width:300px;
+    margin:20px;
+  }
+  div{
+    a{
+      margin-top:20px;
+      width:120px;
+      line-height: 100px;
+      hr{
+        width:120px;
+        height:1px;
+        margin:0px;
+      }
+    }
+  }
+}
 .space-views{
   padding:40px;
   display: flex;
@@ -248,7 +268,7 @@ article, section {
           height:300px;
           width:320px;
         }
-        h4 {
+        h5 {
           z-index: 100;
           padding:15px;
           width:220px;
@@ -266,8 +286,11 @@ article, section {
     hr{
       height:1px;
       margin:10px;
-      width:100%;
+      width:90%;
     }
+  }
+  .insta-link{
+    width:150px;
   }
 }
 figure:hover{

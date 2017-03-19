@@ -1,7 +1,8 @@
 body {
   width: 100%;
   height: 100%;
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  margin: 0; }
 
 hr {
   width: 70%; }
@@ -45,21 +46,6 @@ article, section {
     margin-top: 40px;
     width: calc(100% + 2px); }
 
-.statement {
-  height: 400px; }
-  .statement p {
-    width: 50%;
-    min-width: 300px;
-    margin: 20px; }
-  .statement div a {
-    margin-top: 20px;
-    width: 120px;
-    line-height: 100px; }
-    .statement div a hr {
-      width: 120px;
-      height: 1px;
-      margin: 0px; }
-
 .hidden-nav {
   position: fixed;
   top: 0;
@@ -81,6 +67,11 @@ article, section {
 
 .banner {
   position: relative; }
+  .banner .logo {
+    position: absolute;
+    left: 20px;
+    top: 30px;
+    z-index: 100; }
   .banner .overlay {
     position: absolute;
     top: 0;
@@ -95,32 +86,27 @@ article, section {
     height: 100%;
     width: 100%;
     overflow: hidden; }
-    .banner #video-container .logo {
-      position: absolute;
-      left: 20px;
-      top: 30px;
-      z-index: 100; }
     .banner #video-container video {
       position: absolute;
       width: 100%;
       min-width: 1000px;
       z-index: 0; }
-    .banner #video-container ul {
-      display: flex;
-      justify-content: space-between;
-      margin: 5px 25px; }
-      .banner #video-container ul li {
-        padding: 8px 18px;
-        margin: 10px;
-        z-index: 100; }
-    .banner #video-container .site-nav {
-      position: absolute;
-      top: 15px;
-      right: 15px;
-      height: 50px;
+  .banner ul {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 25px; }
+    .banner ul li {
+      padding: 8px 15px;
+      margin: 10px;
       z-index: 100; }
-      .banner #video-container .site-nav button {
-        z-index: 100; }
+  .banner .site-nav {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    height: 50px;
+    z-index: 100; }
+    .banner .site-nav button {
+      z-index: 100; }
   .banner .title-statement {
     position: absolute;
     top: 200px;
@@ -139,6 +125,17 @@ article, section {
         top: 35px;
         left: 0; }
 
+.above-fold-container {
+  width: 100%;
+  height: 550px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .above-fold-container .community-page-title-statement {
+    width: 600px; }
+    .above-fold-container .community-page-title-statement h1 {
+      width: 100px; }
+
 .menu-icon {
   position: absolute;
   right: 20px;
@@ -156,7 +153,7 @@ article, section {
   z-index: 250;
   top: 0;
   left: 0;
-  height: 100vh;
+  height: 100%;
   width: 100vw;
   display: flex;
   flex-direction: column;
@@ -186,6 +183,21 @@ article, section {
   margin: 20px;
   width: 380px; }
 
+.statement {
+  height: 400px; }
+  .statement p {
+    width: 50%;
+    min-width: 300px;
+    margin: 20px; }
+  .statement div a {
+    margin-top: 20px;
+    width: 120px;
+    line-height: 100px; }
+    .statement div a hr {
+      width: 120px;
+      height: 1px;
+      margin: 0px; }
+
 .space-views {
   padding: 40px;
   display: flex;
@@ -208,7 +220,7 @@ article, section {
       .space-views .space-container a figure div {
         height: 300px;
         width: 320px; }
-      .space-views .space-container a figure h4 {
+      .space-views .space-container a figure h5 {
         z-index: 100;
         padding: 15px;
         width: 220px;
@@ -222,7 +234,9 @@ article, section {
     .space-views .headline hr {
       height: 1px;
       margin: 10px;
-      width: 100%; }
+      width: 90%; }
+  .space-views .insta-link {
+    width: 150px; }
 
 figure:hover {
   transform: scale(1.01);
@@ -264,9 +278,6 @@ body {
 
 *:focus {
   outline: none; }
-
-a:hover {
-  color: #447B8A; }
 
 .inverse {
   color: white; }
@@ -328,6 +339,8 @@ a:hover {
     background: linear-gradient(to bottom, rgba(66, 66, 66, 0.7), transparent); }
   .banner .logo {
     color: white; }
+    .banner .logo h1 a {
+      color: white; }
     .banner .logo h4 {
       font-family: "brandon-grotesque", sans-serif; }
   .banner .title-statement h1 {
@@ -347,6 +360,10 @@ a:hover {
   background: #447B8A;
   border: none; }
 
+.above-fold-container {
+  background-color: #447B8A;
+  color: white; }
+
 .space-container a figure {
   background: white; }
   .space-container a figure #quiet {
@@ -358,9 +375,9 @@ a:hover {
 
 .space-views {
   background-color: #447B8A; }
-  .space-views a:visited h5 {
+  .space-views .insta-link h5 {
     color: white; }
-  .space-views h4 {
+  .space-views figure h5 {
     background-color: #F7E61C;
     color: #3c3c3c; }
   .space-views .headline h5 hr {
@@ -430,6 +447,8 @@ a:hover {
           padding: 10px;
           padding-top: 20px;
           top: 60px; }
+    .banner .community-page-title-statement {
+      font-size: 120%; }
 
   .statement p {
     font-size: 1.5em; }

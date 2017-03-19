@@ -14,14 +14,8 @@ body {
 
 }
 
-
-
 *:focus {
   outline: none;
-}
-
-a:hover{
-  color: $cowork-blue;
 }
 
 .inverse {
@@ -45,7 +39,7 @@ a:hover{
   }
 
 }
-
+//Navs
 .hidden-nav {
   background-color: $background-grey;
   h4, h1 {
@@ -60,6 +54,8 @@ a:hover{
     }
 
 }
+
+
 //Mobile menu styling
 .mobile-menu {
   background-color: $background-white;
@@ -93,7 +89,7 @@ a:hover{
   background: $background-grey;
   color:$text-white;
 }
-
+//Above Fold
 .banner {
   height:80vh;
   .overlay{
@@ -101,6 +97,11 @@ a:hover{
   }
   .logo{
     color: $text-white;
+    h1{
+      a{
+        color: $text-white;
+      }
+    }
     h4{
       font-family: $titles;
     }
@@ -132,6 +133,10 @@ a:hover{
       border:none;
     }
   }
+}
+.above-fold-container{
+  background-color: $background-blue;
+  color:$text-white;
 
 }
 
@@ -155,13 +160,14 @@ a:hover{
 
 .space-views {
   background-color: $background-blue;
-  a:visited h5{
+  .insta-link h5{
     color:$text-white;
   }
-
-  h4{
-    background-color: $background-yellow;
-    color: $text-grey;
+  figure{
+    h5{
+      background-color: $background-yellow;
+      color: $text-grey;
+    }
   }
   .headline{
     h5{
