@@ -178,15 +178,17 @@ article, section {
   top: 20px;
   right: 20px; }
 
-.testimony h2 {
-  padding-top: 50px;
-  padding-bottom: 20px;
-  width: 60%; }
-.testimony hr {
-  width: 53px; }
-.testimony h4 {
-  margin: 20px;
-  width: 380px; }
+.testimony {
+  height: 350px; }
+  .testimony h2 {
+    padding-top: 30px;
+    width: 75%; }
+  .testimony hr {
+    width: 53px;
+    margin: 50px; }
+  .testimony h4 {
+    margin: 20px;
+    width: 200px; }
 
 .statement {
   height: 400px; }
@@ -462,8 +464,8 @@ body {
   .statement p {
     font-size: 1.5em; }
 
-  .testimony h5 {
-    font-size: 120%; } }
+  .testimony h2 {
+    font-size: 33px; } }
 ul, li, h1, h2, h3, h4, h5, h6 {
   list-style-type: none;
   padding: 0;

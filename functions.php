@@ -7,10 +7,9 @@ add_action('wp_enqueue_scripts', 'cowork_resources');
 
 // add titles
 add_theme_support('title-tag');
+
 //add featured image
 add_theme_support('post-thumbnails');
-
-//video header support
 
 
 //Menu support

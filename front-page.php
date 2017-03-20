@@ -21,7 +21,7 @@
 <div class="divider-container reveal-menu">
   <div class="angle-divider"></div>
 </div>
-<div class="statement flex-center center">
+<div class="statement flex-center center column">
   <h2><?php the_field('first_statement_headline')?></h2>
   <p><?php the_field('first_statement_content')?></p>
   <div>
@@ -53,7 +53,7 @@
   </section>
     <a href="https://www.google.com/maps/dir/''/cowork+bloomington/@39.1649436,-86.6082,12z/data=!3m1!4b1!4m8!4m7!1m0!1m5!1m1!1s0x886c66ddaa8cd77d:0x62d180cce00eb339!2m2!1d-86.53816!2d39.1649646" target="_blank"><button class="directions"><h4><u>GET DIRECTIONS</u></h4></button></a>
 </div>
-<section class="testimony inverse-section flex-center center">
+<section class="inverse-section flex-center center column testimony">
   <h2><?php the_field('testimony'); ?></h2>
   <hr/>
   <h5><?php the_field('testimony_author')?></h5>
