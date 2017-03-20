@@ -22,6 +22,9 @@
  if (have_posts()) :
    while (have_posts()) : the_post(); ?>
    <h1><?php the_title(); ?></h1>
+   <?php if(has_post_thumbnail()) {
+     the_post_thumbnail('thumbnail');
+   } ?>
    <p><?php the_content(); ?></p>
 
  <?php endwhile;
@@ -33,6 +36,16 @@
 </div>
 <div class="reveal-menu">
 </div>
+<hr class="grey-divider"/>
+<section class="flex-center column contact-container">
+  <h1>WANNA HANG WITH US?</h1>
+  <br/>
+  <br/>
+  <div>
+    <button class="contact"><h2>YES PLEASE</h2></button>
+    <button class="contact"><h2>NO THANKS</h2></button>
+  </div>
+</section>
 
 
 <?php get_footer(); ?>

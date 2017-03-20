@@ -11,7 +11,6 @@ body {
   p{
     font-size: 16px;
   }
-
 }
 
 *:focus {
@@ -24,6 +23,11 @@ body {
 .inverse:hover {
   color: $text-white;
 }
+//elements
+.grey-divider {
+  border-top: 3px solid $background-grey;
+}
+//Navs
 .site-nav {
   background-color:$clear;
   ul{
@@ -39,7 +43,7 @@ body {
   }
 
 }
-//Navs
+
 .hidden-nav {
   background-color: $background-grey;
   h4, h1 {

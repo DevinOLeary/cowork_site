@@ -22,7 +22,9 @@ article, section {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
+}
+.column {
+  flex-direction:column;
 }
 .flex-row {
   display: flex;
@@ -37,7 +39,7 @@ article, section {
   display: table;
   clear:both;
 }
-// Divider
+// Dividers
 .divider-container{
   width: 100%;
   margin-top:-65px;
@@ -49,6 +51,9 @@ article, section {
     margin-top: 40px;
     width:calc(100% + 2px);
   }
+}
+.grey-divider{
+  width:90%;
 }
 
 // Navigation
@@ -298,6 +303,10 @@ figure:hover{
   z-index: 15;
   box-shadow: 0px 2px 2px $box-shadow;
 }
+//Containers
+.contact-container {
+  height: 500px;
+}
 .map-container{
   position: relative;
   .map{
@@ -325,5 +334,8 @@ figure:hover{
 
 .footer-block{
   width: 100%;
-  height:116px;
+  height:150px;
+  img{
+    margin: 2em;
+  }
 }
