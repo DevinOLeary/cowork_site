@@ -22,6 +22,11 @@
       font-size: 120%;
     }
   }
+  article{
+    p{
+      font-size:1.5em;
+    }
+  }
   .statement {
     p{
       font-size:1.5em;
@@ -32,5 +37,23 @@
         font-size:33px;
       }
   }
-
+  .above-fold-container{
+    .featured-header{
+      h1{
+        font-size:48px;
+      }
+      h2 {
+        font-size: 36px;
+      }
+    }
+  }
+  .featured-intro-statement-container {
+    font-size: 20px;
+  }
+  //features
+  .action-button{
+    h2{
+      font-size: 24px;
+    }
+  }
 }

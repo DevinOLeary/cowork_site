@@ -85,3 +85,8 @@ $(function() {
         });
   }
 });
+
+$(function() {
+  var preview = $(".member-preview");
+
+});

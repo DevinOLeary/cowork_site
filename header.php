@@ -3,9 +3,6 @@
   <head>
     <meta charset="<?php bloginfo('charset'); ?>">
     <meta name="viewport" content="width=device-width">
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
 
     <!-- Jquery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
@@ -27,20 +24,13 @@
 
   <body <?php body_class(); ?>>
     <header class="site-header">
+      <!-- Below Fold Menu-->
       <nav class="hidden-nav" id="hiddenMenu">
         <a href="<?php bloginfo('wpurl');?>"><h1><?php echo get_bloginfo('name');?></h1></a>
         <div class='scroll-menu-icon' id='scrollHamburger'><h3>Menu</h3></div>
           <?php wp_nav_menu( array('theme_location' => 'lower', 'menu_class' => 'nav-menu flex-row', 'menu_id' => 'scrollDesktopMenu')); ?>
       </nav>
-      <?php if(is_page(community)) {?>
-        <nav class="child-page-header">
-          <hgroup class="logo">
-            <h1><a href="<?php bloginfo('wpurl'); ?>"><?php bloginfo('name'); ?></a></h1>
-            <h4>Bloomington, IN</h4>
-          </hgroup>
-          <?php wp_nav_menu(array('theme_location' => 'main', 'container_class' => 'site-nav', 'container_id' => 'desktopMenu')); ?>
-        </nav>
-      <?php }?>
+      <!-- Mobile Menu -->
       <div class='menu-icon' id='hamburger'><h3>Menu</h3></div>
       <div class="mobile-menu hide" id="mobileMenu">
         <h1>Cowork</h1>
@@ -48,4 +38,3 @@
         <?php wp_nav_menu(array('theme_location' => 'mobile')); ?>
       </div>
     </header>
-  

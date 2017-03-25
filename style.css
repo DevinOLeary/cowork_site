@@ -19,7 +19,8 @@ article, section {
 .flex-center {
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  flex-wrap: wrap; }
 
 .column {
   flex-direction: column; }
@@ -27,7 +28,8 @@ article, section {
 .flex-row {
   display: flex;
   flex-direction: row;
-  justify-content: space-around; }
+  justify-content: space-between;
+  flex-wrap: wrap; }
 
 .headline {
   margin: 50px; }
@@ -132,7 +134,7 @@ article, section {
 
 .above-fold-container {
   width: 100%;
-  height: 550px;
+  height: 600px;
   display: flex;
   justify-content: center;
   align-items: center; }
@@ -140,6 +142,19 @@ article, section {
     width: 600px; }
     .above-fold-container .community-page-title-statement h1 {
       width: 100px; }
+  .above-fold-container .featured-header {
+    width: 80%;
+    text-align: center;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 70px; }
+    .above-fold-container .featured-header img {
+      margin: 0 5%; }
+    .above-fold-container .featured-header hgroup {
+      margin: 0 5%; }
+      .above-fold-container .featured-header hgroup h1 {
+        margin: 10px;
+        padding-bottom: 3px; }
 
 .menu-icon {
   position: absolute;
@@ -195,7 +210,7 @@ article, section {
   .statement p {
     width: 50%;
     min-width: 300px;
-    margin: 20px; }
+    margin: 50px; }
   .statement div a {
     margin-top: 20px;
     width: 120px;
@@ -204,6 +219,10 @@ article, section {
       width: 120px;
       height: 1px;
       margin: 0px; }
+
+.featured-content {
+  margin: 50px 20%;
+  min-width: 300px; }
 
 .space-views {
   padding: 40px;
@@ -271,6 +290,37 @@ figure:hover {
     bottom: 25px;
     height: 50px;
     width: 215px; }
+
+.member-gallery-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 5%; }
+  .member-gallery-container div {
+    position: relative; }
+    .member-gallery-container div img {
+      margin: 2em; }
+    .member-gallery-container div .member-preview {
+      position: absolute;
+      bottom: -30px;
+      width: 100%;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center; }
+
+.featured-intro-statement-container {
+  margin: 7vw;
+  padding: 30px 0;
+  min-width: 280px; }
+
+.social-links-container {
+  margin-top: 50px; }
+
+.show {
+  display: flex; }
 
 .footer-block {
   width: 100%;
@@ -378,6 +428,13 @@ body {
 .above-fold-container {
   background-color: #447B8A;
   color: white; }
+  .above-fold-container .featured-header hgroup h1 {
+    border-bottom: 2px solid white; }
+
+.featured-intro-statement-container {
+  border-top: 1px solid #3c3c3c;
+  border-bottom: 1px solid #3c3c3c;
+  font-size: 16px; }
 
 .space-container a figure {
   background: white; }
@@ -414,6 +471,9 @@ body {
   background-repeat: no-repeat;
   margin-right: 0; }
 
+.member-gallery-container .member-preview {
+  background-color: rgba(255, 255, 255, 0.7); }
+
 .footer-block {
   background: #323232; }
 
@@ -436,13 +496,16 @@ body {
   color: white;
   background-color: #146eb2; }
 
-.contact {
+.action-button {
   border: none;
   background-color: #F7E61C;
   color: #3c3c3c;
-  width: 200px;
+  padding: 1em;
   height: 70px;
   margin: 2em; }
+  .action-button h2 {
+    font-weight: 300;
+    font-size: 18px; }
 
 @media screen and (min-width: 760px) {
   .banner {
@@ -461,11 +524,25 @@ body {
     .banner .community-page-title-statement {
       font-size: 120%; }
 
+  article p {
+    font-size: 1.5em; }
+
   .statement p {
     font-size: 1.5em; }
 
   .testimony h2 {
-    font-size: 33px; } }
+    font-size: 33px; }
+
+  .above-fold-container .featured-header h1 {
+    font-size: 48px; }
+  .above-fold-container .featured-header h2 {
+    font-size: 36px; }
+
+  .featured-intro-statement-container {
+    font-size: 20px; }
+
+  .action-button h2 {
+    font-size: 24px; } }
 ul, li, h1, h2, h3, h4, h5, h6 {
   list-style-type: none;
   padding: 0;
