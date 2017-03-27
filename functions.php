@@ -21,7 +21,8 @@ add_action('init', 'cowork_features');
 // title tags
 add_theme_support('title-tag');
 
-function wpb_autolink_featured_images( $html, $post_id, $post_image_id ) {
+function wpb_autolink_featured_images( $html, $post_id, $post_image_id, $overlay ) {
+
 $html = '<a href="' . get_permalink( $post_id ) . '" title="' . esc_attr( get_the_title( $post_id ) ) . '">' . $html . '</a>';
 return $html;
 }

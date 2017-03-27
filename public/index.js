@@ -86,7 +86,16 @@ $(function() {
   }
 });
 
-$(function() {
-  var preview = $(".member-preview");
+//Member preview overlay
 
-});
+// $(function() {
+//   $(".member-preview").hide();
+//   $(".member-image").hover(
+//     function() {
+//       $(".member-preview", this).fadeIn(200);
+//     },
+//     function() {
+//       $(".member-preview").hide();
+//     }
+//   );
+// });

@@ -19,7 +19,7 @@
     <?php
      if (have_posts()) :
        while (have_posts()) : the_post(); ?>
-      <div>
+      <div class="member-image">
        <?php the_post_thumbnail($size = 'medium'); ?>
        <div class="member-preview">
          <h2><?php the_title(); ?></h2>
