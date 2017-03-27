@@ -19,7 +19,8 @@ article, section {
 .flex-center {
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  flex-wrap: wrap; }
 
 .column {
   flex-direction: column; }
@@ -27,7 +28,8 @@ article, section {
 .flex-row {
   display: flex;
   flex-direction: row;
-  justify-content: space-around; }
+  justify-content: space-between;
+  flex-wrap: wrap; }
 
 .headline {
   margin: 50px; }
@@ -71,7 +73,8 @@ article, section {
       padding-right: 20px; }
 
 .banner {
-  position: relative; }
+  position: relative;
+  height: 80vh; }
   .banner .logo {
     position: absolute;
     left: 20px;
@@ -132,14 +135,26 @@ article, section {
 
 .above-fold-container {
   width: 100%;
-  height: 550px;
+  height: 700px;
   display: flex;
   justify-content: center;
   align-items: center; }
   .above-fold-container .community-page-title-statement {
-    width: 600px; }
+    width: 600px;
+    margin: 2em; }
     .above-fold-container .community-page-title-statement h1 {
       width: 100px; }
+  .above-fold-container .featured-header {
+    width: 80%;
+    text-align: center;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 130px; }
+    .above-fold-container .featured-header hgroup {
+      margin: 0 5%; }
+      .above-fold-container .featured-header hgroup h1 {
+        margin: 10px;
+        padding-bottom: 3px; }
 
 .menu-icon {
   position: absolute;
@@ -195,7 +210,7 @@ article, section {
   .statement p {
     width: 50%;
     min-width: 300px;
-    margin: 20px; }
+    margin: 50px; }
   .statement div a {
     margin-top: 20px;
     width: 120px;
@@ -204,6 +219,10 @@ article, section {
       width: 120px;
       height: 1px;
       margin: 0px; }
+
+.featured-content {
+  margin: 50px 20%;
+  min-width: 300px; }
 
 .space-views {
   padding: 40px;
@@ -271,6 +290,35 @@ figure:hover {
     bottom: 25px;
     height: 50px;
     width: 215px; }
+
+.member-gallery-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 5%; }
+  .member-gallery-container .member-image {
+    position: relative; }
+    .member-gallery-container .member-image .member-preview {
+      width: 100%;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center; }
+    .member-gallery-container .member-image a img {
+      margin: 1em; }
+
+.featured-intro-statement-container {
+  margin: 7vw;
+  padding: 30px 0;
+  min-width: 280px; }
+
+.social-links-container {
+  margin-top: 50px; }
+
+.hide {
+  display: none; }
 
 .footer-block {
   width: 100%;
@@ -348,26 +396,24 @@ body {
   background: #3c3c3c;
   color: white; }
 
-.banner {
-  height: 80vh; }
-  .banner .overlay {
-    background: linear-gradient(to bottom, rgba(66, 66, 66, 0.7), transparent); }
-  .banner .logo {
+.banner .overlay {
+  background: linear-gradient(to bottom, rgba(66, 66, 66, 0.7), transparent); }
+.banner .logo {
+  color: white; }
+  .banner .logo h1 a {
     color: white; }
-    .banner .logo h1 a {
-      color: white; }
-    .banner .logo h4 {
-      font-family: "brandon-grotesque", sans-serif; }
-  .banner .title-statement h1 {
-    color: white;
-    font-size: 2em; }
-    .banner .title-statement h1 span {
-      color: #3c3c3c;
-      background-color: rgba(255, 255, 255, 0.7); }
-  .banner li {
+  .banner .logo h4 {
+    font-family: "brandon-grotesque", sans-serif; }
+.banner .title-statement h1 {
+  color: white;
+  font-size: 2em; }
+  .banner .title-statement h1 span {
+    color: #3c3c3c;
+    background-color: rgba(255, 255, 255, 0.7); }
+.banner li {
+  color: white; }
+  .banner li a {
     color: white; }
-    .banner li a {
-      color: white; }
 
 .statement h2 {
   color: inherit; }
@@ -378,6 +424,13 @@ body {
 .above-fold-container {
   background-color: #447B8A;
   color: white; }
+  .above-fold-container .featured-header hgroup h1 {
+    border-bottom: 2px solid white; }
+
+.featured-intro-statement-container {
+  border-top: 1px solid #3c3c3c;
+  border-bottom: 1px solid #3c3c3c;
+  font-size: 16px; }
 
 .space-container a figure {
   background: white; }
@@ -436,15 +489,18 @@ body {
   color: white;
   background-color: #146eb2; }
 
-.contact {
+.action-button {
   border: none;
   background-color: #F7E61C;
   color: #3c3c3c;
-  width: 200px;
+  padding: 1em;
   height: 70px;
   margin: 2em; }
+  .action-button h2 {
+    font-weight: 300;
+    font-size: 18px; }
 
-@media screen and (min-width: 760px) {
+@media screen and (min-width: 800px) {
   .banner {
     font-size: 150%; }
     .banner h1 {
@@ -461,11 +517,30 @@ body {
     .banner .community-page-title-statement {
       font-size: 120%; }
 
+  .above-fold-container {
+    height: 600px; }
+    .above-fold-container .featured-header {
+      margin-top: 70px; }
+
+  article p {
+    font-size: 1.5em; }
+
   .statement p {
     font-size: 1.5em; }
 
   .testimony h2 {
-    font-size: 33px; } }
+    font-size: 33px; }
+
+  .above-fold-container .featured-header h1 {
+    font-size: 48px; }
+  .above-fold-container .featured-header h2 {
+    font-size: 36px; }
+
+  .featured-intro-statement-container {
+    font-size: 20px; }
+
+  .action-button h2 {
+    font-size: 24px; } }
 ul, li, h1, h2, h3, h4, h5, h6 {
   list-style-type: none;
   padding: 0;

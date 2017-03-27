@@ -25,7 +25,7 @@ $text-black: $black;
 $text-grey: $grey;
 $box-shadow: $grey;
 $overlay-grey:linear-gradient(to bottom, $grey-transparent, $clear);;
-$overlay-white: linear-gradient(to bottom right, $white-transparent, $clear);
+$overlay-white: linear-gradient(to top, $white, $clear);
 $button-blue: $cowork-blue;
 $button-blue-hover: $dark-blue;
 

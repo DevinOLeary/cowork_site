@@ -17,11 +17,15 @@
 
 
 //contact page submit button
-.contact{
+.action-button{
   border: none;
   background-color:$background-yellow;
   color:$text-grey;
-  width:200px;
+  padding:1em;
   height:70px;
   margin:2em;
+  h2{
+    font-weight: 300;
+    font-size:18px;
+  }
 }

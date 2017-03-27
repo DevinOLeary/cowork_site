@@ -1,4 +1,5 @@
 <?php get_header(); ?>
+
 <section class="banner">
   <div class="overlay">
   </div>
@@ -46,7 +47,7 @@
     </a>
   </div>
   <br />
-  <a href="https://www.instagram.com/coworkbtown/?hl=en" target="_blank" class="inverse headline center"><h5 class=" insta-link">+ FOLLOW ALONG ON <hr/>INSTAGRAM<img src="<?php bloginfo('template_directory');?>/media/glyph-logo_May2016.png" class="instagram-icon"/></h5></a>
+  <a href="https://www.instagram.com/coworkbtown/?hl=en" target="_blank" class="inverse headline center"><h5 class=" insta-link">+ FOLLOW ALONG ON <hr/>INSTAGRAM<img src="<?php bloginfo('template_directory');?>/media/instagram-logo.png" class="instagram-icon"/></h5></a>
 </section>
 <div class="map-container">
   <section  class="map" id="map">
@@ -60,4 +61,5 @@
 </section>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAxnZHClVCmy5yXs9C0bBpWNh3KkpIpqQo&callback=initMap"
  async defer></script>
+
 <?php get_footer(); ?>

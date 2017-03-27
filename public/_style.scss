@@ -95,7 +95,6 @@ body {
 }
 //Above Fold
 .banner {
-  height:80vh;
   .overlay{
     background: $overlay-grey;
   }
@@ -141,9 +140,19 @@ body {
 .above-fold-container{
   background-color: $background-blue;
   color:$text-white;
-
+  .featured-header{
+    hgroup{
+      h1{
+        border-bottom: 2px solid $text-white;
+      }
+    }
+  }
 }
-
+.featured-intro-statement-container {
+  border-top: 1px solid $text-grey;
+  border-bottom: 1px solid $text-grey;
+  font-size: 16px;
+}
 
 .space-container {
  a{
@@ -161,7 +170,7 @@ body {
    }
  }
 }
-
+//Containers
 .space-views {
   background-color: $background-blue;
   .insta-link h5{
@@ -203,6 +212,7 @@ body {
     margin-right:0;
   }
 }
+
 
 
 
