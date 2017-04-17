@@ -197,13 +197,11 @@ article, section {
   height: 350px; }
   .testimony h2 {
     padding-top: 30px;
-    width: 75%; }
+    margin: 0 10%; }
   .testimony hr {
     width: 53px;
-    margin: 50px; }
-  .testimony h4 {
-    margin: 20px;
-    width: 200px; }
+    margin-top: 50px;
+    padding-bottom: 20px; }
 
 .statement {
   height: 400px; }
@@ -406,7 +404,7 @@ body {
     font-family: "brandon-grotesque", sans-serif; }
 .banner .title-statement h1 {
   color: white;
-  font-size: 2em; }
+  font-size: 2.2em; }
   .banner .title-statement h1 span {
     color: #3c3c3c;
     background-color: rgba(255, 255, 255, 0.7); }
