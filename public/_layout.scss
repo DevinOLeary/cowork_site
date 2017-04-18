@@ -327,6 +327,9 @@ figure:hover{
 //Containers
 .contact-container {
   height: 500px;
+  display:flex;
+  justify-content: center;
+  flex-direction: column;
 }
 .map-container{
   position: relative;

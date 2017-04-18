@@ -36,7 +36,7 @@
 <div>
 </div>
 <hr class="grey-divider"/>
-<section class="flex-center column center contact-container">
+<section class="col-sm-12 center contact-container">
   <h1>WANNA HANG WITH US?</h1>
   <br/>
   <br/>
