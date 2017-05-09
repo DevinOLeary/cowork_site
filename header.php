@@ -15,6 +15,9 @@
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
+    <!-- jquery ui css -->
+    <link href="<?php bloginfo('template_directory');?>/public/jquery-ui.css" rel="stylesheet">
+
     <!-- Typekit -->
     <script src="https://use.typekit.net/nlk5nrc.js"></script>
     <script>try{Typekit.load({ async: true });}catch(e){}</script>

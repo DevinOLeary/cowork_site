@@ -18,6 +18,7 @@ article, section {
 .left{
   text-align: left;
 }
+//flex designation
 .flex-center {
   display: flex;
   justify-content: center;
@@ -25,6 +26,7 @@ article, section {
   flex-wrap: wrap;
 }
 .column {
+  display: flex;
   flex-direction:column;
 }
 .flex-row {
@@ -33,6 +35,10 @@ article, section {
   justify-content: space-between;
   flex-wrap: wrap;
 }
+.flex-split {
+  justify-content: space-between;
+}
+
 .headline {
   margin: 50px;
 }
@@ -247,7 +253,7 @@ article, section {
 
 
 .statement {
-  height:400px;
+  padding-bottom: 3em;
   p {
     width:50%;
     min-width:300px;
@@ -330,6 +336,26 @@ figure:hover{
   display:flex;
   justify-content: center;
   flex-direction: column;
+}
+.tour-container {
+  width:100%;
+  form {
+    .form-subcontainer{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-direction: column;
+      text-align: left;
+      height: 200px;
+      label {
+        margin: 1em;
+        width: 100%;
+        textarea {
+          width: 100%;
+        }
+      }
+    }
+  }
 }
 .map-container{
   position: relative;

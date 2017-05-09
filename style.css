@@ -23,6 +23,7 @@ article, section {
   flex-wrap: wrap; }
 
 .column {
+  display: flex;
   flex-direction: column; }
 
 .flex-row {
@@ -30,6 +31,9 @@ article, section {
   flex-direction: row;
   justify-content: space-between;
   flex-wrap: wrap; }
+
+.flex-split {
+  justify-content: space-between; }
 
 .headline {
   margin: 50px; }
@@ -204,7 +208,7 @@ article, section {
     padding-bottom: 20px; }
 
 .statement {
-  height: 400px; }
+  padding-bottom: 3em; }
   .statement p {
     width: 50%;
     min-width: 300px;
@@ -272,6 +276,21 @@ figure:hover {
   display: flex;
   justify-content: center;
   flex-direction: column; }
+
+.tour-container {
+  width: 100%; }
+  .tour-container form .form-subcontainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    text-align: left;
+    height: 200px; }
+    .tour-container form .form-subcontainer label {
+      margin: 1em;
+      width: 100%; }
+      .tour-container form .form-subcontainer label textarea {
+        width: 100%; }
 
 .map-container {
   position: relative; }
@@ -494,8 +513,7 @@ body {
   border: none;
   background-color: #F7E61C;
   color: #3c3c3c;
-  padding: 1em;
-  height: 70px;
+  padding: 10px 50px;
   margin: 2em; }
   .action-button h2 {
     font-weight: 300;

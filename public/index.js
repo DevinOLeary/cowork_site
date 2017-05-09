@@ -51,6 +51,20 @@ $(function() {
   });
 });
 
+//Tour form toggle
+$(function() {
+  $('#tourForm').hide();
+  $('#scheduleTour').on('click', function(){
+    $('#tourForm').slideToggle(400);
+  });
+});
+
+//datepicker for tour form
+$(function() {
+  $('#datepicker').datepicker();
+});
+
+
 //Map api
 $(function() {
   if (document.getElementById('map')) {
@@ -85,17 +99,3 @@ $(function() {
         });
   }
 });
-
-//Member preview overlay
-
-// $(function() {
-//   $(".member-preview").hide();
-//   $(".member-image").hover(
-//     function() {
-//       $(".member-preview", this).fadeIn(200);
-//     },
-//     function() {
-//       $(".member-preview").hide();
-//     }
-//   );
-// });
