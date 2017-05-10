@@ -31,44 +31,7 @@
   <div class="tour-container" id="tourForm">
     <hr />
     <form class="flex-center column">
-      <div class="flex-center flex-split">
-        <div class="form-subcontainer">
-          <label for="your name">
-          YOUR NAME &nbsp
-          <input type="text" name="name">
-          </label>
-          <label for="phone number">
-          YOUR DIGITS &nbsp
-            <input type="phone" name="phone-number">
-          </label>
-          <label for="email">
-          YOUR EMAIL &nbsp
-            <input type="email" name="email">
-          </label>
-        </div>
-        <div class="form-subcontainer">
-          <label for="date">
-          WHAT DAY WORKS FOR YOU? &nbsp
-              <input type="text" id="datepicker" name="date">
-          </label>
-          <label for="tour time">
-          WHAT TIME? &nbsp
-            <select name="time">
-              <option value="11:00">11 am</option>
-              <option value="2:00">2 pm</option>
-            </select>
-          </label>
-          <label for="notes">
-            <textarea name="notes" rows="3" placeholder="ANY QUESTIONS FOR US?"></textarea>
-          </label>
-        </div>
-      </div>
-      <label for="submit">
-        <button class="action-button" type="submit">
-          <h2>Submit</h2>
-        </button>
-      </label>
-
+        <?php the_content(); ?>
     </form>
   </div>
 </div>

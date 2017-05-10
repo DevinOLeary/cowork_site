@@ -279,18 +279,10 @@ figure:hover {
 
 .tour-container {
   width: 100%; }
-  .tour-container form .form-subcontainer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: column;
-    text-align: left;
-    height: 200px; }
-    .tour-container form .form-subcontainer label {
-      margin: 1em;
-      width: 100%; }
-      .tour-container form .form-subcontainer label textarea {
-        width: 100%; }
+  .tour-container form .input {
+    width: 500px; }
+  .tour-container form .textarea {
+    height: 20px; }
 
 .map-container {
   position: relative; }

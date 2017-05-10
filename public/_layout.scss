@@ -340,23 +340,15 @@ figure:hover{
 .tour-container {
   width:100%;
   form {
-    .form-subcontainer{
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-direction: column;
-      text-align: left;
-      height: 200px;
-      label {
-        margin: 1em;
-        width: 100%;
-        textarea {
-          width: 100%;
-        }
-      }
+    .input {
+      width:500px;
+    }
+    .textarea {
+      height: 20px;
     }
   }
 }
+
 .map-container{
   position: relative;
   .map{
