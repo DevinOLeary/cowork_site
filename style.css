@@ -209,7 +209,7 @@ article, section {
 
 .statement {
   padding-bottom: 3em; }
-  .statement p {
+  .statement .statement-text {
     width: 50%;
     min-width: 300px;
     margin: 50px; }
@@ -278,11 +278,10 @@ figure:hover {
   flex-direction: column; }
 
 .tour-container {
-  width: 100%; }
-  .tour-container form .input {
-    width: 500px; }
-  .tour-container form .textarea {
-    height: 20px; }
+  width: 90%; }
+  .tour-container .nf-form-cont {
+    width: 90%;
+    max-width: 500px; }
 
 .map-container {
   position: relative; }

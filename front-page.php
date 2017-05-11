@@ -24,7 +24,7 @@
 </div>
 <div class="statement flex-center center column">
   <h2><?php the_field('first_statement_headline')?></h2>
-  <p><?php the_field('first_statement_content')?></p>
+  <p class="statement-text"><?php the_field('first_statement_content')?></p>
   <div>
     <a id="scheduleTour"><h4>SCHEDULE A <hr/> TOUR</h4></a>
   </div>

@@ -254,7 +254,7 @@ article, section {
 
 .statement {
   padding-bottom: 3em;
-  p {
+  .statement-text {
     width:50%;
     min-width:300px;
     margin:50px;
@@ -338,14 +338,10 @@ figure:hover{
   flex-direction: column;
 }
 .tour-container {
-  width:100%;
-  form {
-    .input {
-      width:500px;
-    }
-    .textarea {
-      height: 20px;
-    }
+  width:90%;
+  .nf-form-cont{
+    width:90%;
+    max-width:500px;
   }
 }
 
