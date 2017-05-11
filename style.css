@@ -209,7 +209,7 @@ article, section {
 
 .statement {
   padding-bottom: 3em; }
-  .statement p {
+  .statement .statement-text {
     width: 50%;
     min-width: 300px;
     margin: 50px; }
@@ -278,19 +278,10 @@ figure:hover {
   flex-direction: column; }
 
 .tour-container {
-  width: 100%; }
-  .tour-container form .form-subcontainer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: column;
-    text-align: left;
-    height: 200px; }
-    .tour-container form .form-subcontainer label {
-      margin: 1em;
-      width: 100%; }
-      .tour-container form .form-subcontainer label textarea {
-        width: 100%; }
+  width: 90%; }
+  .tour-container .nf-form-cont {
+    width: 90%;
+    max-width: 500px; }
 
 .map-container {
   position: relative; }
@@ -514,10 +505,10 @@ body {
   background-color: #F7E61C;
   color: #3c3c3c;
   padding: 10px 50px;
-  margin: 2em; }
-  .action-button h2 {
-    font-weight: 300;
-    font-size: 18px; }
+  margin: 2em;
+  font-weight: 300;
+  font-size: 18px;
+  min-width: 200px; }
 
 @media screen and (min-width: 800px) {
   .banner {
